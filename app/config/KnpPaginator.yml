@@ -1,0 +1,6 @@
+# app/config/knpPaginator.yml
+
+knp_paginator:
+    page_range: 5                      # default page range used in pagination control
+    template:
+        pagination: KnpPaginatorBundle:Pagination:twitter_bootstrap_v3_pagination.html.twig     # sliding pagination controls template

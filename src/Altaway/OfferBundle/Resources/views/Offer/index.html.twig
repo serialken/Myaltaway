@@ -1,0 +1,20 @@
+{% extends "AltawayOfferBundle:Offer:layout.html.twig" %}
+
+{% block offerContent %}
+    {% for offer in pagination %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <a href="{{ path('altaway_offer_show', {'slug': offer.slug}) }}">{{ offer.title}}</a>
+            </div>
+            <div class="panel-body offer-body-list">
+                {{ offer.body | raw }}
+            </div>
+            <div class="panel-footer offer-footer-list">
+                <a href="{{ path('altaway_offer_show', {'slug': offer.slug}) }}">{{ 'show_offer' | trans }}</a>
+            </div>
+        </div>
+    {% endfor %}
+    <div class="navigation">
+        {{ knp_pagination_render(pagination) }}
+    </div>
+{% endblock %}

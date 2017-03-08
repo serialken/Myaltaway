@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="altaway_offer.factory.apply.class">Altaway\OfferBundle\Factory\ApplyFactory</parameter>
+        <parameter key="altaway_offer.entity.apply.class">Altaway\OfferBundle\Entity\Apply</parameter>
+
+
+        <parameter key="altaway.apply.manager.class">Altaway\OfferBundle\Manager\ApplyManager</parameter>
+    </parameters>
+
+    <services>
+        <service id="altaway_offer.factory.apply" class="%altaway_offer.factory.apply.class%">
+            <argument type="service" id="session"></argument>
+        </service>
+        <service id="altaway.apply.manager" class="%altaway_offer.entity.apply.class%" factory-service="altaway_offer.factory.apply" factory-method="init" scope="prototype"/>
+    </services>
+</container>

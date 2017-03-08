@@ -1,0 +1,4 @@
+altaway_pages:
+    resource: "@AltawayPageBundle/Controller/"
+    type: annotation
+    prefix: /

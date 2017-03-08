@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr-FR" target-language="fr" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="887f7db126221fe60d18c895d41dc8f6" resname="Confirm Password">
+        <source>Confirm Password</source>
+        <target>Confirm Password</target>
+      </trans-unit>
+      <trans-unit id="ce8ae9da5b7cd6c3df2929543a9af92d" resname="Email">
+        <source>Email</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="99dea78007133396a7b8ed70578ac6ae" resname="Login">
+        <source>Login</source>
+        <target>Login</target>
+      </trans-unit>
+      <trans-unit id="dc647eb65e6711e155375218212b3964" resname="Password">
+        <source>Password</source>
+        <target>Password</target>
+      </trans-unit>
+      <trans-unit id="bbbabdbe1b262f75d99d62880b953be1" resname="Role">
+        <source>Role</source>
+        <target>Role</target>
+      </trans-unit>
+      <trans-unit id="f55d0ee7678408df1dd394f05d38d515" resname="form.document.media">
+        <source>form.document.media</source>
+        <target>Fichier</target>
+      </trans-unit>
+      <trans-unit id="d31dc364d92241fa8e1f19ed31d33ff6" resname="form.documents.add">
+        <source>form.documents.add</source>
+        <target>Ajouter un document</target>
+      </trans-unit>
+      <trans-unit id="924c0ebd3b2190ac86b41a0b074e5ec9" resname="form.documents.delete">
+        <source>form.documents.delete</source>
+        <target>Supprimer le document</target>
+      </trans-unit>
+      <trans-unit id="3574e18c9da23154e5d0ff8fc80a8803" resname="form.profile.documents">
+        <source>form.profile.documents</source>
+        <target>Documents</target>
+      </trans-unit>
+      <trans-unit id="572556bb390a4ec33dd2a771251207ab" resname="form.profile.lastname">
+        <source>form.profile.lastname</source>
+        <target>Nom</target>
+      </trans-unit>
+      <trans-unit id="e11b187c5bea70e5901692a59386d8a2" resname="form.profile.name">
+        <source>form.profile.name</source>
+        <target>Prénom</target>
+      </trans-unit>
+      <trans-unit id="4172c379d6c0758d52225fcae8c68879" resname="form.profile.type">
+        <source>form.profile.type</source>
+        <target>Type</target>
+      </trans-unit>
+      <trans-unit id="4435aaaff592418a58213dd3c1f2c11f" resname="form.user.profile">
+        <source>form.user.profile</source>
+        <target>Profils</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

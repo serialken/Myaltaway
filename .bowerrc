@@ -1,0 +1,5 @@
+{
+  "interactive": false,
+  "directory": "vendor-front",
+  "json": "bower.json"
+}

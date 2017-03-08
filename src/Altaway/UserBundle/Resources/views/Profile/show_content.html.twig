@@ -1,0 +1,17 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="fos_user_user_show">
+    <p>{% media user.profile.avatar, 'small' %}</p>
+    <p>{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
+    <p>{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
+    <p>{{ 'name'|trans }}: {{ user.profile.name }}</p>
+    <p>{{ 'lastname'|trans }}: {{ user.profile.name }}</p>
+    <p>
+    {{ "applications_list" | trans }}:
+        <ul>
+        {% for apply in user.applies %}
+            <li><a href="{{ path('altaway_offer_show', {'slug': apply.offer.slug}) }}">{{ apply.offer.title }}</a></li>
+        {% endfor %}
+        </ul>
+    </p>
+</div>

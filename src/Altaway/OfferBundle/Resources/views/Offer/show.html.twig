@@ -1,0 +1,57 @@
+{% extends "AltawayOfferBundle:Offer:layout.html.twig" %}
+
+{% block title %}{{ 'offers' | trans }}{% endblock %}
+
+
+{% block offerTitle %}{{ 'show_offer' | trans }}{% endblock %}
+
+{% block offerContent %}
+    <div class="col-xs-12 col-sm-12 col-md-12 col-ld-12">
+        {% for flashMessage in app.session.flashbag.get('notice_success') %}
+            <div class="alert alert-success" role="alert">{{ flashMessage }}</div>
+        {% endfor %}
+        {% for flashMessage in app.session.flashbag.get('notice_failure') %}
+            <div class="alert alert-danger">{{ flashMessage }}</div>
+        {% endfor %}
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            {{ offer.title }}
+        </div>
+        <div class="panel-body">
+            {{ offer.body | raw }}
+        </div>
+        <div class="panel-footer offer-footer-list">
+            {% if user == null %}
+                <a href="{{ path('fos_user_registration_register') }}">{{ 'layout.register' | trans({}, 'FOSUserBundle')  }}</a>
+            {% else %}
+                {% set flag = false %}
+
+                {% for apply in user.applies %}
+                    {% if date(apply.createdAt) > date('-1month') %}
+                        {% set maximumNumberApplicationReaches = maximumNumberApplicationReaches - 1 %}
+                    {% endif %}
+                    {% if apply.offer.id == offer.id %}
+                        {{ 'already_apply' | trans }}
+                        {% set flag = true %}
+                    {% endif %}
+                {% endfor %}
+                {% if flag == false %}
+                    {% if maximumNumberApplicationReaches <= 0 %}
+                        {{ 'maximum_number_application_reached' | trans }}
+                    {% elseif form is not null %}
+                        {{ 'remaning_applications' | trans({'%amount%': maximumNumberApplicationReaches }) }}
+                        {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+                        {{ form_widget(form.apply, {'attr': {'class': 'btn btn-primary'}}) }}
+                        {{ form_rest(form) }}
+                        {{ form_end(form) }}
+                    {% endif %}
+                {% endif %}
+
+            {% endif %}
+
+
+        </div>
+    </div>
+
+{% endblock %}

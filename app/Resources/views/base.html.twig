@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}{% endblock %}</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {% block metadatas %}
+            {% if description is defined %}
+                <meta name="description" content="{{ description }}" />
+            {% endif %}
+            {% if author is defined %}
+                <meta name="author" content="{{ author }}" />
+            {% endif %}
+            {% if keywords is defined %}
+                <meta name="keywords" content="{{ keywords }}" />
+            {% endif %}
+            {% if title is defined %}
+                <meta name="title" content="{{ title }}" />
+            {% endif %}
+        {% endblock %}
+        {% block stylesheets %}
+            {% set env = app.environment == 'dev' ? '' : '.min' %}
+            <link rel="stylesheet" type="text/css" href="{{ asset('bundles/vendor/bootstrap/dist/css/bootstrap'~ env ~'.css') }}" />
+            <link rel="stylesheet" type="text/css" href="{{ asset('bundles/vendor/bootstrap-sweetalert/lib/sweet-alert.css') }}" />
+            <link rel="stylesheet" type="text/css" href="{{ asset('built/css/core'~ env ~'.css') }}" />
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+    </body>
+    {% block javascripts %}
+        {% set env = app.environment == 'dev' ? '' : '.min' %}
+        <script src="{{ asset('built/js/plugins'~ env ~'.js') }}"></script>
+        <script src="{{ asset('built/js/core'~ env ~'.js') }}"></script>
+    {% endblock %}
+</html>

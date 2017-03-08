@@ -1,0 +1,26 @@
+/web/built/
+/web/bundles/
+/web/assets/
+/web/uploads/*
+!/web/uploads/.gitkeep
+/app/bootstrap.php.cache
+/app/cache/*
+/app/config/parameters.yml
+/app/logs/*
+/app/sessions/*
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+!app/sessions/.gitkeep
+/build/
+/node_modules/
+/vendor/
+/vendor-front/
+/bin/
+/composer.phar
+
+# IDE files
+/.idea/
+
+*.swp
+*~
+*DS_Store

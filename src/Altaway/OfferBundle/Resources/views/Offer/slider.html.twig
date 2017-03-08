@@ -1,0 +1,34 @@
+<div class="col-xs-offset-2 col-xs-8 pagecontent">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            {% for trio_offers in list_offers %}
+                <div class="item {% if loop.index == 1 %} active {% endif %}">
+                    <div class="col-xs-12 slideoffer"></div>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            {% for offer in trio_offers %}
+                                <div class="col-xs-12 col-md-4 carousel-tips">
+                                    {% if offer.slug != "" %}
+                                        {{ offer.publishAt | date("m/Y") }}
+                                        <br />
+                                        <a href="{{ path('altaway_offer_show', {'slug': offer.slug}) }}">{{ offer.title }}</a>
+                                        <br />
+                                        {{ offer.location }}
+                                    {% endif %}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">{{ 'previous' | trans }}</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">{{ 'next' | trans }}</span>
+        </a>
+    </div>
+</div>

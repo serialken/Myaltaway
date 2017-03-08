@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="altaway.offer.manager.class">Altaway\OfferBundle\Manager\OfferManager</parameter>
+        <parameter key="altaway.offer.entity.class">Altaway\OfferBundle\Entity\Offer</parameter>
+    </parameters>
+
+    <services>
+        <service id="altaway.offer.manager" class="%altaway.offer.manager.class%">
+            <argument>%altaway.offer.entity.class%</argument>
+            <argument type="service" id="doctrine" />
+        </service>
+    </services>
+
+</container>

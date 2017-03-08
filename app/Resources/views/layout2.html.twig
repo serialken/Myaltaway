@@ -1,0 +1,69 @@
+{% extends "::base.html.twig" %}
+
+{%  block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('css/menuSlide_css.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-sweetalert/lib/sweet-alert.css') }}" type="text/css">
+{% endblock %}
+
+{%  block body %}
+    <div class="sidemenu">
+        <div class="menu-wrap" id="menu-wrap_white">
+            <nav class="menu">
+            </nav>
+        </div>
+        <div class="menu-wrap">
+            <nav class="menu">
+            </nav>
+        </div>
+        <button class="menu-button animation-target-logo" id="open-button">
+
+
+        </button>
+
+        {{ render(controller("AltawayPageBundle:Page:menu")) }}
+
+
+    </div>
+    <div class="content-wrap">
+        <div class="content">
+        {% block content %}
+
+        {% endblock %}
+        </div>
+    </div>
+    <footer class="col-xs-12">
+        <div class="row footer">
+        <div class="col-xs-4 map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.2477506136443!2d2.2471555999999997!3d48.891615400000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6650f6e4174c1%3A0x7dd374827e0fb1f4!2s22+Place+des+Vosges%2C+92400+Courbevoie!5e0!3m2!1sen!2sfr!4v1439906433847" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-xs-4">
+            <b>ALTAWAY</b> <br>
+            Tour Monge <br>
+            22 Place des Vosges <br>
+            92 400 Courbevoie La Défense 5
+        </div>
+        <div class="col-xs-4">
+            <b>Nous contacter</b> <br>
+            Entreprises : <br>
+            <a href="mailto:contact@altaway.fr">contact@altaway.fr</a> <br>
+            Candidats : <br>
+            <a href="mailto:recrutement@altaway.fr">recrutement@altaway.fr</a>
+        </div>
+        </div>
+    </footer>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script src="{{ asset('js/menu.js') }}"></script>
+    <script src="{{ asset('assets/vendor/bootstrap-sweetalert/lib/sweet-alert.js') }}"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    {# implementation of sizannia editor #}
+    {% include "SizanniaEditorBundle:Layout:sizannia.html.twig" with {'lang': 'en' }%}
+
+{% endblock %}

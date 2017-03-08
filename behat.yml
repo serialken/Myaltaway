@@ -1,0 +1,13 @@
+default:
+#  suites:
+#    first:
+#      mink_session: default
+#      mink_javascript_session: selenium2
+  extensions:
+    Behat\MinkExtension:
+      base_url: 'http://altaway.localhost'
+      sessions:
+        default:
+          goutte: ~
+        selenium2:
+          selenium2: ~

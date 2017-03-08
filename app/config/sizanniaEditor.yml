@@ -1,0 +1,37 @@
+# app/config/sizanniaEditor.yml
+
+sizannia_editor:
+    plugins:
+        # You can add your custom plugin
+        wenzgmap:
+            enable:     false
+            path:       "bundles/acmedemo/plugins/wenzgmap/"
+            filename:   "plugin.js"
+        youtube:
+            enable:     false
+            path:       "bundles/acmedemo/plugins/youtube/"
+            filename:   "plugin.js"
+    # CKFinder is a file explorer. You can include an image in a text
+    ckfinder:   true
+    #You can change the display of the toolbar. This configuration is common to all editors
+    toolbars:
+        - { name: 'document', items: [ 'Source', '-', 'NewPage', 'Preview', '-', 'Templates', '/' ] }
+        - { name: 'document', items: ['/'] } # New Line
+        - { name: 'default', items: [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ] }
+        - { name: 'default2', items: [ 'Bold', 'Italic' ] }
+    # You can remove one or many plugins
+    removePlugins: about, find, save, templates, dialogadvtab, div, forms, newpage, bidi, flash, table, tabletools, pagebreak, maximize, showblocks, preview, print
+    # If you want you can add style for html element
+    styles:
+        - {name: "Titre Paragraphe", element: 'p', attributes: {'class': 'paragraph-title'}}
+        - {name: "Titre Contact / SavoirPlus", element: 'p', attributes: {'class': 'encart-title'}}
+        - {name: "Titre Saviez-Vous", element: 'p', attributes: {'class': 'saviez-title'}}
+        - {name: "SousTitre Saviez-Vous", element: 'p', attributes: {'class': 'saviz-undertitle'}}
+        - {name: "Titre Pack Accueil Lieu", element: 'span', attributes: {'class': 'lieu'}}
+        - {name: "Titre Pack Accueil Fréquence", element: 'span', attributes: {'class': 'frequence'}}
+        - {name: "Titre Pack Accueil Aller", element: 'span', attributes: {'class': 'amplitude-aller'}}
+        - {name: "Titre Pack Accueil Retour", element: 'span', attributes: {'class': 'amplitude-retour'}}
+        - {name: "Titre Contact", element: 'span', attributes: {'class': 'title-contact'}}
+        - {name: "SousTitre Contact", element: 'span', attributes: {'class': 'sous_title-contact'}}
+        - {name: "Lien Site Contact", element: 'span', attributes: {'class': 'website-contact'}}
+        - {name: "Lien Mail Contact", element: 'span', attributes: {'class': 'mail-contact'}}

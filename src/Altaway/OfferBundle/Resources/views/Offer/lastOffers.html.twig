@@ -1,0 +1,14 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        {{ 'last_offers' | trans }}
+    </div>
+    <div class="panel-body">
+        <ul>
+            {% for offer in last_offers %}
+                <li>
+                    <a href="{{ path('altaway_offer_show', {'slug': offer.slug}) }}">{{ offer.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

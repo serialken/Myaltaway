@@ -1,0 +1,21 @@
+{% extends "SonataAdminBundle::standard_layout.html.twig" %}
+
+{% block javascripts %}
+    {{ parent () }}
+    {# implementation of sizannia editor #}
+    {% include "SizanniaEditorBundle:Layout:sizannia.html.twig" with {'lang': 'fr' }%}
+    {# role #}
+    {% include 'SizanniaJqueryToolsBundle::layoutJs.html.twig' with {'lang': 'fr' } %}
+{% endblock %}
+
+{% block css %}
+    {% include 'SizanniaJqueryToolsBundle::layoutCSS.html.twig' %}
+{% endblock css %}
+
+{% block sonata_top_nav_menu %}
+    {{ parent () }}
+{% endblock sonata_top_nav_menu %}
+
+{% block side_bar_after_nav %}
+
+{% endblock side_bar_after_nav %}

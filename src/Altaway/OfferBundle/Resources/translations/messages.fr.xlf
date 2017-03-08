@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr-FR" target-language="fr" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="3ec365dd533ddb7ef3d1c111186ce872" resname="Details">
+        <source>Details</source>
+        <target>Details</target>
+      </trans-unit>
+      <trans-unit id="2faec1f9f8cc7f8f40d521c4dd574f49" resname="Enable">
+        <source>Enable</source>
+        <target>Enable</target>
+      </trans-unit>
+      <trans-unit id="ce5bf551379459c1c61d2a204061c455" resname="Location">
+        <source>Location</source>
+        <target>Location</target>
+      </trans-unit>
+      <trans-unit id="546c5d32ef08b819e70aa83d14352e44" resname="Published at">
+        <source>Published at</source>
+        <target>Published at</target>
+      </trans-unit>
+      <trans-unit id="0efd7076aae43c7b3c9ee3b61389ed00" resname="Short Title">
+        <source>Short Title</source>
+        <target>Short Title</target>
+      </trans-unit>
+      <trans-unit id="b78a3223503896721cca1303f776159b" resname="Title">
+        <source>Title</source>
+        <target>Title</target>
+      </trans-unit>
+      <trans-unit id="3365ef82d02f13676c1e81d64b27fb79" resname="already_apply">
+        <source>already_apply</source>
+        <target>Vous avez déjà postulé pour cette mission</target>
+      </trans-unit>
+      <trans-unit id="a00680b9c71c661cc940f7366c0d81b5" resname="application_fail">
+        <source>application_fail</source>
+        <target>application_fail</target>
+      </trans-unit>
+      <trans-unit id="4d88eae1ea405596caebabc0e37042fc" resname="application_success">
+        <source>application_success</source>
+        <target>application_success</target>
+      </trans-unit>
+      <trans-unit id="a2d0ed7ae8b3cf8a499e27e8143d6570" resname="form.application.submit">
+        <source>form.application.submit</source>
+        <target>Postuler</target>
+      </trans-unit>
+      <trans-unit id="ba3988db0a3167093b1f74e8ae4a8e83" resname="homepage">
+        <source>homepage</source>
+        <target>accueil</target>
+      </trans-unit>
+      <trans-unit id="54114088e5e7d3ca473220b23223ede8" resname="last_offers">
+        <source>last_offers</source>
+        <target>les dernières offres</target>
+      </trans-unit>
+      <trans-unit id="20f233982ab6657309955301d672b6ce" resname="maximum_number_application_reached">
+        <source>maximum_number_application_reached</source>
+        <target>Vous avez atteint le nombre maximum de candidatures</target>
+      </trans-unit>
+      <trans-unit id="d0cab90d8d20d57e2f2b9be52f7dd25d" resname="next">
+        <source>next</source>
+        <target>suivant</target>
+      </trans-unit>
+      <trans-unit id="b2bf18e206cf9b5eb2d632030acb16cc" resname="offers">
+        <source>offers</source>
+        <target>offers</target>
+      </trans-unit>
+      <trans-unit id="2327346e833efcd6b2e7b3f0a4df8ebb" resname="previous">
+        <source>previous</source>
+        <target>précédent</target>
+      </trans-unit>
+      <trans-unit id="ff8d4ac7a787d0f63a1db483507a8ea0" resname="remaning_applications">
+        <source>remaning_applications</source>
+        <target>Il vous reste %amount% candidature(s) possible(s)</target>
+      </trans-unit>
+      <trans-unit id="0920f1c82cc899fb814a693357503939" resname="show_offer">
+        <source>show_offer</source>
+        <target>Voir la suite</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

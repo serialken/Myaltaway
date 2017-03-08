@@ -1,0 +1,18 @@
+
+
+sonata_block:
+    default_contexts: [cms]
+    blocks:
+        # Enable the SonataAdminBundle block
+        sonata.admin.block.admin_list:
+            contexts:   [admin]
+        # Your other blocks
+
+sonata_admin:
+    title:      Altaway Admin
+    title_logo: bundles/AltawayPage/img/altaway_logo.png
+    templates:
+        layout: SonataAdminBundle::standard_layout.html.twig
+        user_block: SonataAdminBundle:Core:user_block.html.twig
+    security:
+        handler: sonata.admin.security.handler.role

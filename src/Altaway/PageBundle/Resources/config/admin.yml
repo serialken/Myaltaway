@@ -1,0 +1,13 @@
+# Altaway/PageBundle/Resources/config/admin.yml
+
+services:
+    sonata.admin.page:
+        class: Altaway\PageBundle\Admin\PageAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Page" }
+        arguments:
+            - ~
+            - Altaway\PageBundle\Entity\Page
+            - ~
+        calls:
+            - [ setTemplate, [layout, AltawayAdminBundle::layout.html.twig]]

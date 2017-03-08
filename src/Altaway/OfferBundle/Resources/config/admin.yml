@@ -1,0 +1,13 @@
+# Altaway/OfferBundle/Resources/config/admin.yml
+
+services:
+    sonata.admin.offer:
+        class: Altaway\OfferBundle\Admin\OfferAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Offer" }
+        arguments:
+            - ~
+            - Altaway\OfferBundle\Entity\Offer
+            - ~
+        calls:
+            - [ setTemplate, [layout, AltawayAdminBundle::layout.html.twig]]

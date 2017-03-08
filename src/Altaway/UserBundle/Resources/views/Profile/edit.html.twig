@@ -1,0 +1,14 @@
+{% extends "AltawayUserBundle::layout.html.twig" %}
+
+{% block fos_user_content %}
+    {% include "FOSUserBundle:Profile:edit_content.html.twig" %}
+{% endblock fos_user_content %}
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+
+        $(document).ready(function() {
+            var $container = $('div#fos_user_profile_form_profile_documents');
+            gestion_collection($container, "{{ 'form.documents.add' | trans }}", "{{ 'form.documents.delete' | trans }}");});
+    </script>
+{% endblock javascripts %}

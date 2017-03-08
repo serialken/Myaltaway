@@ -1,0 +1,8 @@
+# Altaway/PageBundle/Resources/config/services.yml
+imports:
+    - { resource: admin.yml }
+
+services:
+#    altaway_page.example:
+#        class: Altaway\PageBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

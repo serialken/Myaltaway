@@ -1,0 +1,31 @@
+# Altaway/UserBundle/Resources/config/admin.yml
+
+services:
+    sonata.admin.user:
+        class: Altaway\UserBundle\Admin\UserAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Users", label: "User" }
+        arguments:
+            - ~
+            - Altaway\UserBundle\Entity\User
+            - ~
+        calls:
+
+    sonata.admin.type:
+        class: Altaway\UserBundle\Admin\TypeAdmin
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Users, label: Type}
+        arguments:
+            - ~
+            - Altaway\UserBundle\Entity\Type
+            - SonataAdminBundle:CRUD
+        calls:
+
+    sonata.admin.document:
+        class: Altaway\UserBundle\Admin\DocumentAdmin
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: Users, label: Document, show_in_dashboard: false}
+        arguments:
+            - ~
+            - Altaway\UserBundle\Entity\Document
+            - SonataAdminBundle:CRUD

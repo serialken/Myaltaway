@@ -1,0 +1,3 @@
+altaway_offers:
+    resource: "@AltawayOfferBundle/Controller/"
+    type: annotation

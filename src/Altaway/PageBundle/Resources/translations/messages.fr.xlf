@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr-FR" target-language="fr" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="021da1b20f73dc252361a54d80497ef3" resname="Rank">
+        <source>Rank</source>
+        <target>Rank</target>
+      </trans-unit>
+      <trans-unit id="9e60f2c580319e33906ad3a9e7d49a31" resname="SubTitle">
+        <source>SubTitle</source>
+        <target>SubTitle</target>
+      </trans-unit>
+      <trans-unit id="b78a3223503896721cca1303f776159b" resname="Title">
+        <source>Title</source>
+        <target>Title</target>
+      </trans-unit>
+      <trans-unit id="65afdfb40872c44eb6118b669b0d751e" resname="candidate">
+        <source>candidate</source>
+        <target>Candidats</target>
+      </trans-unit>
+      <trans-unit id="2f8a6bf31f3bd67bd2d9720c58b19c9a" resname="contact">
+        <source>contact</source>
+        <target>Contact</target>
+      </trans-unit>
+      <trans-unit id="53a2c328fefc1efd85d75137a9d833ab" resname="contact_us">
+        <source>contact_us</source>
+        <target>Nous contacter</target>
+      </trans-unit>
+      <trans-unit id="ba3988db0a3167093b1f74e8ae4a8e83" resname="homepage">
+        <source>homepage</source>
+        <target>Accueil</target>
+      </trans-unit>
+      <trans-unit id="ac77da37fc8527f3fb2c946b56ac77d7" resname="intership">
+        <source>intership</source>
+        <target>Entreprises</target>
+      </trans-unit>
+      <trans-unit id="736054a296a4147122a832aba14db7d1" resname="list_offer">
+        <source>list_offer</source>
+        <target>Liste des offres</target>
+      </trans-unit>
+      <trans-unit id="7d97481b1fe66f4b51db90da7e794d9f" resname="profile">
+        <source>profile</source>
+        <target>Profils</target>
+      </trans-unit>
+      <trans-unit id="d0e0de05499478b8ca660194b71c1c54" resname="show_list_offers">
+        <source>show_list_offers</source>
+        <target>La liste des offres</target>
+      </trans-unit>
+      <trans-unit id="713cd054a3f83df441fdf5891add4783" resname="show_offers">
+        <source>show_offers</source>
+        <target>les offres</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

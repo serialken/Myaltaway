@@ -1,0 +1,39 @@
+a faire a la premiére install du projet
+
+-Cloner les sources
+
+-installer composer
+curl -sS https://getcomposer.org/installer | php
+					ou
+php -r "readfile('https://getcomposer.org/installer');" | php
+
+php composer.phar install
+
+npm install -g bower
+
+bower install
+
+- editer le .ini de mysl et rajouter les lignes suivantes dans la rubrique [mysqld]
+# Version 5.5.3 introduced "utf8mb4", which is recommended
+collation-server     = utf8mb4_general_ci # Replaces utf8_general_ci
+character-set-server = utf8mb4            # Replaces utf8
+
+php app/console assets:install web
+			ou
+php app/console assets:install web
+
+php app/console cache:clear
+
+php app/console doctrine:database:create
+
+
+
+mkdir web/uploads
+mkdir web/uploads/media
+chmod -R 0777 web/uploads
+
+app/console doctrine:schema:[create|update]
+
+php app/console fos:user:create admin admin@test.fr admin
+
+php app/console fos:user:promote admin ROLE_ADMIN

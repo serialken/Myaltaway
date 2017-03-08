@@ -1,0 +1,4 @@
+sizannia_translation:
+  default_locale: %locale%
+  locales: [fr, en]
+  countries: [FR, UK]

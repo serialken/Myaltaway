@@ -1,0 +1,6 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% block fos_user_content %}
+    {% include "AltawayUserBundle:Profile:show_content.html.twig" %}
+    <a href="{{ path('fos_user_profile_edit') }}">Edition</a>
+{% endblock fos_user_content %}
